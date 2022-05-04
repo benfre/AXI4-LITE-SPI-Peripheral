@@ -4,9 +4,9 @@ proc init_gui { IPINST } {
   #Adding Page
   set Page_0 [ipgui::add_page $IPINST -name "Page 0"]
   ipgui::add_param $IPINST -name "ACTIVE_LOW_SS" -parent ${Page_0}
+  ipgui::add_param $IPINST -name "USE_GPIO" -parent ${Page_0}
   set GPIO_WIDTH [ipgui::add_param $IPINST -name "GPIO_WIDTH" -parent ${Page_0}]
   set_property tooltip {Numner of bits of GP Output Desired} ${GPIO_WIDTH}
-  ipgui::add_param $IPINST -name "USE_GPIO" -parent ${Page_0}
 
 
 }
